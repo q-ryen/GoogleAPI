@@ -14,7 +14,7 @@ except ImportError:
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 class GoogleAPI:
-    def __init__(self, sub, conf='wmtconf/default.conf'):
+    def __init__(self, sub, conf='conf/default.conf'):
         self._load_configs(conf)
         self._load_creds(sub)
         self._set_proxy()
